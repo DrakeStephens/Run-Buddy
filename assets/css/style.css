@@ -225,5 +225,9 @@ h3 {
   line-height: 1.5;
   font-style: normal;
   font-size: 20px;
+  float: left;
 }
-
+.contact-form{
+  display: inline-block;
+  vertical-align: top;
+}
