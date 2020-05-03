@@ -28,14 +28,17 @@ header a {
 header nav {
   margin: 7px 0;
 }
-header nav ul li {
-  display: inline;
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
 }
 header nav ul li a {
   margin: 0 30px;
   font-weight: lighter;
-  font-size: 22px;
-  display: inline;
+  font-size: 1.55vw;
 }
 Footer{
   background: #fce138;
@@ -47,7 +50,6 @@ Footer h2 {
   color: #024e76;
   font-size: 30px;
   margin: 0;
-
 }
 Footer div {
 float: right;
