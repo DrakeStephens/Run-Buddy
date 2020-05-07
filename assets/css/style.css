@@ -124,8 +124,8 @@ footer a {
   color: #fce138;
 }
 
-/* intro */
 
+/*what we do*/
 .intro p {
   line-height: 1.7;
   color: #39a6b2;
@@ -134,7 +134,6 @@ footer a {
   margin: 0 auto;
   text-align: center;
 }
-
 /*step*/
 .step {
   margin: 50px auto;
@@ -161,7 +160,7 @@ footer a {
   align-items:center;
 }
 .step-img {
-  flex: 1 12%;
+  flex: 1 8%;
   margin-right: 20px;
 }
 .step-img img {
@@ -194,7 +193,7 @@ footer a {
   justify-content: space-between;
 }
 .trainer {
-  margin: 40px;
+  margin: 30px 30px; 
   background: #024e76;
   color: #fce138;
   flex: 1;
@@ -249,6 +248,7 @@ footer a {
 }
 .contact-info iframe{
   height: 400px;
+  
 }
 .contact-info div {
   color: white;
@@ -310,11 +310,92 @@ footer a {
 }
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
-  
+  /* 980 over all */
+    .section-title {
+      width: 80%;
+    }
+  /*980 header*/
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+  }
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+  header nav ul li a {
+    font-size: 20px;
+  }
+  /* 980 hero */
+
+  .hero-cta, .hero-form {
+    width: 100%;
+
+  }
+  .hero-cta {
+    text-align: center;
+  }
+  /* 980 trainers */
+  .trainer {
+    flex: 0 70%;
+    margin: 30px auto;
+  }
+  /* 980 reach out */
+  .contact-info iframe{
+    flex: 1 100%;
+  }
+  /* 980 footer */
+  footer h2, footer div {
+    text-align: center;
+    width: 100%;
+  }
+
 }
 @media scren and (max-width: 768px) {
-  
+  section {
+    padding: 30px 15px;
+  }
+  .step h3 {
+    flex: 1 100%;
+    text-align: center;
+  }
+  .step-info {
+    flex: 2 100%;
+    text-align: center;
+    justify-content: center;
+  }
+  .step-img {
+    flex: 0 32%;
+    margin-right: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .step-text {
+    flex: 100%;
+  }
 }
 @media screen and (max-width: 575px) {
-  
+  .hero-form button {
+    width: 100%;
+  }
+  .section-title {
+    width: 95%;
+  }
+  .intro p {
+    width: 100%;
+  }
+  .trainer {
+    flex: 0 100%
+  }
+  .contact-info> * {
+    flex: 0 100%;
+  }
+  .contact-form {
+    order: 3;
+  }
 }
